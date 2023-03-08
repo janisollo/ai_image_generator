@@ -24,7 +24,7 @@ const Home = () => {
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Kuvat</h1>
         <p className="mt-2 text-[#666e75] text-[16px] max-w-[500px]">
-          Selaile kuvia jotka on luonut tekoälypohjainen Dall-E
+          Selaile kuvia jotka on luonut tekoälypohjainen Dall-E AI
         </p>
       </div>
 
