@@ -2,7 +2,7 @@
 import express from "express"; // Express is a web framework for Node.js
 import * as dotenv from "dotenv"; // Dotenv is a zero-dependency module that loads environment variables from a .env file
 import cors from "cors"; // Cors is a Node.js package that enables cross-origin resource sharing (CORS)
-import connectDB from "./mongodb/connect";
+import connectDB from "./mongodb/connect.js";
 
 // Loading environment variables from .env file
 dotenv.config();
@@ -25,7 +25,7 @@ app.get("/", async (req, res) => {
 // Function to start the Express app and listen on port 8080
 const startServer = async () => {
   try {
-    connectDB(process.env.MOBGOBD_URL);
+    connectDB(process.env.MONGOBD_URL);
     app.listen(8080, () =>
       console.log("Server has started on port http://localhost:8080")
     );
