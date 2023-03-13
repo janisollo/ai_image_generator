@@ -3,7 +3,8 @@ import express from "express"; // Express is a web framework for Node.js
 import * as dotenv from "dotenv"; // Dotenv is a zero-dependency module that loads environment variables from a .env file
 import cors from "cors"; // Cors is a Node.js package that enables cross-origin resource sharing (CORS)
 import connectDB from "./mongodb/connect.js";
-
+import postRoutes from "./routes/postRoutes";
+import dalleRoutes from "./routes/dalleRoutes";
 // Loading environment variables from .env file
 dotenv.config();
 
